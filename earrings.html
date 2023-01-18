@@ -6,9 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style/earrings.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700" rel="stylesheet">
 </head>
 <body>
-    
+    <img src="/images/Earrings-main.avif" alt="">
+    <div id="main">
+        <div id="main-container">
+            <div id="filter-section">
+                <div class="by-brand">
+                    <h1>Brand</h1>
+                    <p><input type="checkbox" name="by-brand">James Allen</p>
+                    <p><input type="checkbox" name="by-brand">Pandora</p>
+                    <p><input type="checkbox" name="by-brand">Mamiya</p>
+                    <p><input type="checkbox" name="by-brand">Giva</p>
+                </div>
+                <div class="by-price">
+                    <h1>Price</h1>
+                    <p><input type="checkbox" id="by-price" value="by-price">Below ₹5000</p>
+                    <p><input type="checkbox" id="by-price" value="by-price">₹5000-₹10000</p>
+                    <p><input type="checkbox" id="by-price" value="by-price">₹10000-₹15000</p>
+                    <p><input type="checkbox" id="by-price" value="by-price">₹15000-₹25000</p>
+                </div>
+            </div>
+            <div id="products-section">
+                <div id="type&info">
+                    <h1>EarRings</h1>
+                    <p>From dainty studs to statement hoops, our collection of earrings offers something for every fashion lover. Add a touch of elegance and sophistication to any look with our unique designs and high-quality materials. Crystaline diamonds has made thousands of beautiful jewelry pieces for visitors. We offer quality fashionable designs and delightful diamond earrings at competitive price.</p>
+                </div> <hr>
+                <div id="sort">Sort By <select name="sort" class="sort">
+                    <option value="default">Default</option>
+                    <option value="LTH">Low To High</option>
+                    <option value="HTL">High To Low</option>
+                    <option value="asec">A-Z</option>
+                    <option value="desc">Z-A</option>
+                </select></div>
+                <div id="products-container"></div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="./script/earrings.js"></script>
 </html>
