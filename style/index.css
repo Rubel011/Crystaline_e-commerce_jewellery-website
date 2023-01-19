@@ -30,6 +30,7 @@ nav {
     text-decoration-skip: spaces;
   padding-bottom: 10px;
   }
+  
   #sec_nav > ul > li > a{
    color: #0f0f0f;
    font-family: 'MuliSemiBold','Helvetica Neue',Helvetica,Arial,sans-serif;
@@ -44,7 +45,7 @@ nav {
   
   .search-container input[type="text"] {
     padding: 12px 20px;
-    border: linear-gradient(to right, rgb(222, 87, 229) 0%, rgb(136, 99, 251) 100%) 0px 0px / auto;
+    
     font-size: 10px;
     width: 100%;
     border-color:  rgb(222, 87, 229);
