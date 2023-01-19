@@ -1,0 +1,124 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+#current-page{
+    margin: 20px 0 0px 10.5%;
+}
+#current-page>a{
+    text-decoration: none;
+    color: gray;
+}
+#main-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#filter-section {
+    width: 20%;
+    margin-left: 10px;
+    /* position: sticky; */
+}
+
+#products-section {
+    width: 90%;
+    margin-left: 10px;
+}
+
+#sort {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+#products-container {
+    text-align: center;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    font-size: 14px;
+}
+
+.each-card {
+    width: 90%;
+    margin: 20px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.each-card>img {
+    width: 70%;
+}
+
+.each-card>p {
+    font-weight: bolder;
+}
+
+#disc {
+    color: red;
+    margin: 40px 0 40px 0;
+}
+
+.each-card>button {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    border: 1.5px solid #4f3267;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+    /* height: 35px; */
+    width: 91%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.each-card>button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4f3267;
+    transform: translateX(-100%);
+    transition: all .3s;
+    z-index: -1;
+}
+
+.each-card>button:hover {
+    color: white;
+}
+
+.each-card>button:hover::before {
+    transform: translateX(0);
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    #products-container {
+        text-align: center;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        font-size: 14px;
+    }
+}
+@media (min-width: 200px) and (max-width: 599px) {
+    #products-container {
+        text-align: center;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        font-size: 14px;
+    }
+}

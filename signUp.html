@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style/logIn.css">
+    <link rel="stylesheet" href="./style/signUp.css">
 </head>
 <body>
     <div id="main">
         <div id="container">
            <div id="social">
              <div id="heading">
-                 <h3>Log in to CrystaLane</h3>
+                 <h3>Sign Up with CrystaLane</h3>
                  <div></div>
              </div>
              <div id="FandG">
@@ -27,48 +27,102 @@
                      
                      <div><img src="data:image/png;base64,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" alt="google"></div>
                      <div><h4>Google</h4></div>
-                      
                      
                      
                  </div>
-    
-                 
              </div>
-    
              <div id="or">
-              <div ></div>
-              <div><h6>OR</h6></div>
-              <div></div>
+                 <div ></div>
+                 <div><h4>OR</h4></div>
+                 <div></div>
              </div>
-             
            </div>
-    
-    
+ 
+ 
            <div id="form">
-              
-    
-              <div id="email-box">
-                 <div><h4 class="input-heading">Enter Mobile Number or Email</h4></div>
-                 <input class="input" type="text" >
+              <div id="number">
+                 <div id="isd">
+                    <div><h4 class="input-heading">ISD</h4></div>
+                    <div id="isdno"><p>91</p></div>
+                 </div>
+                 <div id="mobile">
+                    <div><h4 class="input-heading">Mobile Number</h4></div>
+                    <input class="input" type="number">
+                 </div>
               </div>
-    
+ 
+              <div id="email-box">
+                 <div><h4 class="input-heading">Enter Email</h4></div>
+                 <input class="input" type="email">
+              </div>
+ 
+              <div id="name">
+                <div class="child">
+                 <div><h4 class="input-heading">First Name</h4></div>
+                 <input class="input" type="text">
+                </div>
+                <div class="child">
+                 <div><h4 class="input-heading">Last Name</h4></div>
+                 <input class="input" type="text">
+                </div>   
+ 
+              </div>
+ 
+              <div id="email-box">
+                 <div><h4 class="input-heading">Password</h4></div>
+                 <input class="input" type="password">
+              </div>
+ 
+              <div id="verify">
+ 
+ 
+              </div>
+ 
+              <div id="email-box">
+                 <div><h4 class="input-heading">Confirm Password</h4></div>
+                 <input class="input" type="password">
+              </div>
+              
+              <div id="radio">
+                  <div >
+                     <input type="radio" name="gender" id="male">
+                     <div class="rchild"><h5>Male</h5></div>
+                  </div>
+ 
+                  <div >
+                     <input type="radio" name="gender" id="female">
+                     <div class="rchild"><h5>Female</h5></div>
+                  </div>
+ 
+                  <div >
+                     <input type="radio" name="gender" id="notSpecify">
+                     <div class="rchild"><h5>I don't want to specify.</h5></div>
+                  </div>
+              </div>
+ 
+           </div>
            <div id="register">
-               
-               <input id="submit" type="submit" value="Continue">
-               <div id="or">
-                <div ></div>
-                <div><h6>OR</h6></div>
-                <div></div>
+               <div>
+                  <div><i class="fa-sharp fa-solid fa-circle-check"></i></div>
+                  <div>
+                     <div><h3>Opt for WhatsApp Support</h3></div>
+                     <div>
+                         <p>We will be sharing Delivery & precious order related communication.Also provided you with an <br> interactive whatsApp support.</p>
+                     </div>
+                  </div>
                </div>
-    
+ 
+               <input id="submit" type="submit" value="Register to Continue">
+ 
                <div id="Already">
-                 <div><p>New to CrystaLane?</p></div>
-                 <div>Create Account</div>
+                 <div><p>Already have an account?</p></div>
+                 <div>LOG IN</div>
                </div>
            </div>
         </div>
-    
+ 
      </div>
 </body>
+<script src="./script/signUp.js"></script>
+<script src="https://kit.fontawesome.com/63a16aff49.js" crossorigin="anonymous"></script>
 </html>
-<script src="./script/logIn.js"></script>

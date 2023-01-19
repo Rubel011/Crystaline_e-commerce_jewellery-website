@@ -47,7 +47,6 @@
     display:flex;
     justify-content: space-around;
     margin-top:9px;
-    margin-bottom: -10px;;
 }
 .box{
     width:160px;
@@ -83,28 +82,27 @@
     color:#BDBDBD;
     margin-top:2px;
 }
-
 #or{
     width:100%;
     height:25px;
-    margin-top: 20px;;
+    margin-top: 6px;;
     display:flex;
     justify-content:center;
     align-items: center;
 }
 #or>div:nth-child(1){
     width:50px;
-    height:0.5px;
+    height:1px;
     background-color:#BDBDBD ;
    margin-right:25px;
 }
 #or>div:nth-child(3){
     width:50px;
-    height:0.5px;
+    height:1px;
     background-color:#BDBDBD ;
     margin-left:25px;
 }
-#or>div:nth-child(2)>h6{
+#or>div:nth-child(2)>h4{
     font-family:InterSemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color:#9E9E9E;
     font-weight: 300;
@@ -115,7 +113,20 @@
     
     margin-top: 2px;;
 }
-
+#number{
+    width:100%;
+    height:80px;
+    
+    margin-top: 20px;
+    display:flex;
+    
+    align-items: center;
+}
+#isd{
+    width:60px;
+    height:100%;
+    
+}
 .input-heading{
     line-height: 18px;
     font-family:InterSemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -123,7 +134,26 @@
     font-size: large;
     font-weight:normal;
 }
-
+#isdno{
+    width:95%;
+    height:50%;
+    margin-top:13px;
+    background-color: white;
+    border:1px solid grey;
+    border-radius: 2px;
+    
+}
+#isdno>p{
+    font-size: larger;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+#mobile{
+    width:313px;
+    
+    height:100%;
+    margin-left:25px;
+}
 .input{
     width:100%;
     height:50%;
@@ -134,8 +164,57 @@
 #email-box{
     width:100%;
     height:80px;
-    margin-bottom: 23px;
+    
     margin-top:15px;
+}
+#name{
+    width:100%;
+    height:80px;
+    
+    margin-top:15px;
+    display: flex;
+    justify-content: space-between;
+}
+.child{
+    
+    width:46%;
+}
+
+#verify{
+    width:100%;
+    height:10px;
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+#radio{
+    width:100%;
+    height:20px;
+    
+    display: flex;
+    
+}
+#radio>div:nth-child(1){
+    display: flex;
+    
+    width:100px;
+}
+#radio>div:nth-child(2){
+    display: flex;
+    
+    width:120px;
+}
+#radio>div:nth-child(3){
+    display: flex;
+
+    width:180px;
+}
+.rchild{
+    margin-top: 2px;
+    margin-left:15px;
+}
+.rchild>h5{
+    font-weight:400;
 }
 #register>div:nth-child(1){
     width:100%;
