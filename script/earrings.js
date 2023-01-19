@@ -37,16 +37,16 @@ function displayCard(data) {
             let cartData = JSON.parse(localStorage.getItem("cart-products")) || []
             isAlreadyInCart = false;
             for (let i = 0; i < cartData.length; i++) {
-                if (cartData[i].id === e.id){
+                if (cartData[i].id === e.id) {
                     isAlreadyInCart = true;
                     break;
                 }
             }
-            if(isAlreadyInCart === true){
+            if (isAlreadyInCart === true) {
                 button.textContent = "Already in cart"
-            }else{
-                cartData.push({...e})
-                localStorage.setItem("cart-products",JSON.stringify(cartData))
+            } else {
+                cartData.push({ ...e })
+                localStorage.setItem("cart-products", JSON.stringify(cartData))
                 button.textContent = "Added to cart"
             }
         })
@@ -73,8 +73,13 @@ sort.addEventListener("change", () => {
         bag.sort((a, b) => b.price - a.price)
     }
     if (sort.value === "asec") {
-        bag.sort((a, b) => a.name < b.name)
-        console.log(bag)
+        fetch('https://63c6ab94d307b769673e3b21.mockapi.io/Earrings')
+            .then((fromResolve) => {
+                return fromResolve.json()
+            })
+            .then((asec) => {
+                displayCard(asec)
+            })
     }
     if (sort.value === "desc") {
         bag.sort((a, b) => b.name > a.name)
@@ -85,9 +90,47 @@ sort.addEventListener("change", () => {
 
 //rightside filter by price
 
-let checkboxes = document.querySelectorAll("#by-price");
-for (let i = 0; i < checkboxes.length; i++) {
-    if (checkboxes[i].checked) {
-        console.log(checkboxes[i].textContent);
+function b5k() {
+    let selected = document.getElementById("price5k")
+    if (selected.checked) {
+        let below5k = bag.filter(e => {
+            return (e.price <= (5000 / 71))
+        })
+        displayCard(below5k)
+    } else {
+        displayCard(bag)
+    }
+}
+function b5_10() {
+    let selected = document.getElementById("price5-10")
+    if (selected.checked) {
+        let price5_10k = bag.filter(e => {
+            return (e.price >= (5000 / 71) && e.price <= (10000 / 71))
+        })
+        displayCard(price5_10k)
+    } else {
+        displayCard(bag)
+    }
+}
+function b10_15() {
+    let selected = document.getElementById("price10-15")
+    if (selected.checked) {
+        let price10_15k = bag.filter(e => {
+            return (e.price >= (10000 / 71) && e.price <= (15000 / 71))
+        })
+        displayCard(price10_15k)
+    } else {
+        displayCard(bag)
+    }
+}
+function b15_25() {
+    let selected = document.getElementById("price15-25")
+    if (selected.checked) {
+        let price15_25k = bag.filter(e => {
+            return (e.price >= (15000 / 71) && e.price <= (25000 / 71))
+        })
+        displayCard(price15_25k)
+    } else {
+        displayCard(bag)
     }
 }

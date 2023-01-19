@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Crystaline | Rings</title>
     <link rel="stylesheet" href="./style/ring.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700" rel="stylesheet">
 </head>
+
 <body>
-    
+    <img src="/images/rings.jpg" alt="#">
+    <div id="main">
+        <div id="main-container">
+            <div id="filter-section">
+                <div class="by-price">
+                    <h1>Price</h1>
+                    <p><input type="checkbox" id="price5k" onchange="b5k()" value="by-price">Below ₹5000</p>
+                    <p><input type="checkbox" id="price5-10" onchange="b5_10()" value="by-price">₹5000-₹10000</p>
+                    <p><input type="checkbox" id="price10-15" onchange="b10_15()" value="by-price">₹10000-₹15000</p>
+                    <p><input type="checkbox" id="price15-25" onchange="b15_25()" value="by-price">₹15000-₹25000</p>
+                </div>
+                <div class="by-brand">
+                    <h1>Brand</h1>
+                    <p><input type="checkbox" name="by-brand">James Allen</p>
+                    <p><input type="checkbox" name="by-brand">Pandora</p>
+                    <p><input type="checkbox" name="by-brand">Mamiya</p>
+                    <p><input type="checkbox" name="by-brand">Giva</p>
+                </div>
+            </div>
+            <div id="products-section">
+                <div id="type&info">
+                    <h1>Rings</h1>
+                    <p>Refine your style with Crystaline's stunning range of timeless rings, crafted in 14k gold,
+                        sterling silver, 14k rose gold-plated and 14k gold-plated unique metal blends. Accessorise with
+                        crown, heart and flower rings adorned in clear crystals or keep it simple with a beaded or
+                        wishbone ring. Use our ring size chart to discover which size is perfect for you.</p>
+                </div>
+                <hr>
+                <div id="sort">Sort By <select name="sort" class="sort">
+                        <option value="default">Default</option>
+                        <option value="LTH">Low To High</option>
+                        <option value="HTL">High To Low</option>
+                        <option value="asec">A-Z</option>
+                        <option value="desc">Z-A</option>
+                    </select></div>
+                <div id="products-container"></div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="./script/ring.js"></script>
+
 </html>
