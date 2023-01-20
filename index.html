@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Crystaline</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v6.2.1/css/all.css"
@@ -13,124 +13,165 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./style/navbar.css" />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li id="logo">
-          <a href="index.html">
-            <img
-              src="./images/WhatsApp Image 2023-01-17 at 9.29.36 PM.jpeg"
-              alt="img"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="#"
-            ><i class="fa-sharp fa-solid fa-house"></i> FREE TRY AT HOME</a
-          >
-        </li>
-        <li>
-          <a href="#"><i class="fa-sharp fa-solid fa-store"></i> FIND STORE</a>
-        </li>
-        <li>
-          <a href="#"
-            ><i class="fa-sharp fa-solid fa-hand-holding-dollar"></i> PLAN OF
-            PURCHASE</a
-          >
-        </li>
-        <li>
-          <a href="#"
-            ><i class="fa-sharp fa-solid fa-coins"></i> BUY DIGITAL GOLD</a
-          >
-        </li>
-        <li>
-          <form>
-            <div class="search-container">
-              <input type="text" placeholder="Search" />
-              <button type="submit"><i class="fa fa-search"></i></button>
+    <header>
+      <section class="header">
+        <div class="headerLeft">
+          <div class="logoContainer">
+            <a href="index.html"
+              ><img src="./images/WhatsApp Image 2023-01-17 at 9.29.36 PM.jpeg"
+            /></a>
+          </div>
+
+          <!--Search Box-->
+          <div class="searchInputContainer">
+            <div class="searchIcon">
+              <img src="./images/search.png" />
             </div>
-          </form>
-        </li>
-        <li>
-          <a href="#"><i class="fa-sharp fa-solid fa-location-dot"></i></a>
-        </li>
-        <li>
-          <a href="#" class="country-flag"></a>
-        </li>
-        <li class="signinDiv">
-          <a href="#"><i class="fa-sharp fa-solid fa-user"></i></a>
-          <div class="signin">
-            <h1>Your Account</h1>
-            <p>Access account & manage your orders.</p>
-            <a href="login.html"> <button>Sign Up</button></a>
+            <form action="" id="inputForm">
+              <input
+                type="text"
+                placeholder="Search by Product Code"
+                class="inputSearch"
+              />
+            </form>
+            <div class="inputCloseSearch">
+              <i class="fa-solid fa-xmark" id="closeSearch"></i>
+            </div>
 
-            <a href="login.html"> <button>Log In</button></a>
+            <div class="searchRecentProduct">
+              <h3>Recent Searches</h3>
+              <div class="listofRecent"></div>
+            </div>
           </div>
-        </li>
-        <li>
-          <a href="#"><i class="fa-sharp fa-solid fa-heart"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
-        </li>
-      </ul>
-    </nav>
-    <nav id="sec_nav">
-      <ul>
-        <li><a href="#">NEW ARRIVALS</a></li>
-        <li>
-          <a href="ring.htnl">RINGS</a>
-          <div>
-            <h4>SHOP BY STYLE</h4>
-            <hr />
-            <img
-              src="https://banner.caratlane.com/live-images/3e52030aaf3c4b59b34f7825aaefd475.jpg"
-              alt=""
-            />
-            <p>ENGAGEMENT</p>
-            <img
-              src="https://banner.caratlane.com/live-images/c3bccfdddaf04356adc275f77f691891.jpg"
-              alt=""
-            />
-            <p>FASHION</p>
+        </div>
 
-            <img
-              src="https://banner.caratlane.com/live-images/bdf62790e1fa4a49bc2cfb3c8b686b49.jpg"
-              alt=""
-            />
-            <p>CASUAL</p>
+        <div class="headerRight">
+          <div class="downloadContainer">
+            <div class="mobileIcon">
+              <img src="./images/mobile.png" />
+            </div>
+            <p>Download App</p>
 
-            <img
-              src="https://banner.caratlane.com/live-images/3aa8d1ca304e40d2bc21b6eccac7318e.jpg"
-              alt=""
-            />
-            <p>ADJUSTABLE RINGS</p>
+            <div class="downloadHoverBtnContainer">
+              <h3>Download From</h3>
 
-            <img
-              src="https://banner.caratlane.com/live-images/4331fd3b9e364c6e998d58fcf5659746.jpg"
-              alt=""
-            />
-            <p>SILVER RINGS</p>
-
-            <img
-              src="https://banner.caratlane.com/live-images/b934e1f5eebe412ebe5e730fa8ff134a.jpg"
-              alt=""
-            />
-            <p>SILVER STATEMENT RINGS</p>
+              <a href="" class="downloadBtn">
+                <img
+                  src="https://images.meesho.com/images/pow/playstore-icon-big.webp"
+                />
+              </a>
+              <a href="" class="downloadBtn">
+                <img
+                  src="https://images.meesho.com/images/pow/appstore-icon-big.webp"
+                />
+              </a>
+            </div>
           </div>
-        </li>
-        <li><a href="earrings.html">EARRINGS</a></li>
-        <li><a href="#">BRACELETS&BANGLES</a></li>
-        <li><a href="#">SOLITAIRES</a></li>
-        <li><a href="#">MANGALSUTRA</a></li>
-        <li><a href="#">READY TO SHIP</a></li>
-        <li><a href="#">KIDS</a></li>
-        <li><a href="#">OTHER JEWELLERY</a></li>
-        <li><a href="#">GIFTING</a></li>
-      </ul>
-    </nav>
+
+          <div class="becomeSupplierContainer">
+            <p>Become a Supplier</p>
+          </div>
+
+          <div class="profileAndCart">
+            <div class="profileContainer">
+              <div class="profileIcon">
+                <img src="./images/profile.png" />
+              </div>
+
+              <!-- Drop Down Sigin/SignUp -->
+
+              <div class="dropdown">
+                <p id="icon-style">Profile</p>
+                <div class="dropdown-options">
+                  <h4>Hello User</h4>
+                  <p>To access your Crystaline account</p>
+                  <button class="sign-up">Sign Up</button>
+                  <hr />
+                  <div class="orderIcon">
+                    <img src="./images/orders.png" />
+                    <a href="#">My Orders</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="CartContainer">
+              <div class="CartIcon">
+                <img src="./images/cart.png" />
+              </div>
+              <p id="icon-style">Cart</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Drop-Down Menu-->
+      <nav>
+        <ul>
+          <li>
+            NEW ARRIVALS
+            <div class="subMenu">
+              <div id="womenEthic" class="submenuList"></div>
+            </div>
+          </li>
+          <li>
+            RINGS
+            <div class="subMenu">
+              <div id="womenWestern" class="submenuList"></div>
+            </div>
+          </li>
+          <li>
+           EARRINGS
+            <div class="subMenu">
+              <div id="men" class="submenuList"></div>
+            </div>
+          </li>
+          <li>
+            BRACELETES & BANGLES
+            <div class="subMenu">
+              <div id="kids" class="submenuList"></div>
+            </div>
+          </li>
+          <li>
+            SOLITAIRES
+            <div class="subMenu">
+              <div id="HomeAndKitchen" class="submenuList"></div>
+            </div>
+          </li>
+          <li>
+            MANGALSUTRA
+            <div class="subMenu">
+              <div id="beautyAndHealth" class="submenuList"></div>
+            </div>
+          </li>
+          <li>
+            READY TO SHIP
+            <div class="subMenu">
+              <div id="JewelleryAndAccessories" class="submenuList"></div>
+            </div>
+          </li>
+          <li>
+            KIDS
+            <div class="subMenu">
+              <div id="BagsFootWarId" class="submenuList"></div>
+            </div>
+          </li>
+          <li>
+            OTHER JEWELLERY
+            <div class="subMenu">
+              <div id="ElectronicsId" class="submenuList"></div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
       <div id="banner">
@@ -631,6 +672,7 @@
     repeat();
   </script>
   <script src="./script/index.js"></script>
+  <script src="./scripts/nav.js"></script>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script>
