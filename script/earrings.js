@@ -55,17 +55,13 @@ function displayCard(data) {
         each.append(div)
     })
 }
-//add to cart function
-// function addTocart(){
 
-// }
 // Sorting
 let sort = document.querySelector(".sort")
 sort.addEventListener("change", () => {
-    // console.log(sort.value);
-    // if(sort.value === "Default"){
-    //     displayCard(bag)
-    // }
+    if(sort.value === "default"){
+        displayCard(bag)
+    }
     if (sort.value === "LTH") {
         bag.sort((a, b) => a.price - b.price)
     }
@@ -73,17 +69,24 @@ sort.addEventListener("change", () => {
         bag.sort((a, b) => b.price - a.price)
     }
     if (sort.value === "asec") {
-        fetch('https://63c6ab94d307b769673e3b21.mockapi.io/Earrings')
+        fetch('https://63c6ab94d307b769673e3b21.mockapi.io/Earrings?sortBy=name&order=asc')
             .then((fromResolve) => {
                 return fromResolve.json()
             })
             .then((asec) => {
+               // console.log(asec);
                 displayCard(asec)
             })
     }
     if (sort.value === "desc") {
-        bag.sort((a, b) => b.name > a.name)
-        console.log(bag)
+        fetch('https://63c6ab94d307b769673e3b21.mockapi.io/Earrings?sortBy=name&order=desc')
+            .then((fromResolve) => {
+                return fromResolve.json()
+            })
+            .then((desc) => {
+               // console.log(desc);
+                displayCard(desc)
+            })
     }
     displayCard(bag)
 })
@@ -133,4 +136,16 @@ function b15_25() {
     } else {
         displayCard(bag)
     }
+}
+
+//pagination
+let totalPages = Math.ceil(35/12)
+let pagination = document/querySelector("#pagination")
+for(let i=1; i<=totalPages; i++){
+    let pageButton = document.createElement('button')
+    pageButton.textContent = i;
+    pageButton.addEventListener('click',() => {
+        console.log("working");
+    })
+    pagination.append(pageButton)
 }
