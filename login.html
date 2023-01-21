@@ -16,6 +16,7 @@
                  <div></div>
              </div>
              <div id="FandG">
+
                 <div class="box">
                         
                     <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAAB6CAMAAABHh7fWAAAAaVBMVEU7WZj///8uUJSjrcn19vonTJIOP4zEytzO1OIeRo8kSpHL0eDg4+z5+vsgSJCps83l6O97jLQ1VZa5wdaZpcR1h7JEYJxjeapvgq9gdahTbKLW2uZMZp+Sn8Ds7/SvuNAALoUAJoIAN4nQ1DqgAAACBElEQVRoge3baXOCMBAG4JDDGBAi0eKF2Pr/f2Q9pq2YRRjI0U73nfEb8hhMJmucJcklXGoWMFryq0ouL0aDh93pUpDgEeWVZhHki80SwmkMmRDKiYxFS6Jj0ZqwWDRDGmmkkf79tPlKSNpQoYpqsy3LcrvZ7SuqlCpSG3FO09mOZbfy5yF8edBWUeCYVrVuEjCLwist6lUOw75penx+0IFoY7Ju2CttzOKV7JNOO6aXf1q9HrNHWuge2RttNn2yP/oQi6Zlr+yLLvoH7Yke8E37ovuntzdaLaPRdcd2lTfLn2Q+9msDz+9mvatE8R37+MABfTsWsXISorssc0WnEpLVgI88mVbAqm56RuyIngET/DTgZMgFDZRFb4FGDdDVgPd5oofc0hM95BAQaaSRRvr/0lQ8hr4D9Ew8xwlNmWwFOsSQVmoXdDq3qf44KQvTlwcXHeGzaPTCLhND0TKNRgNIKPpo14mhaKBEDUTn+2g0B+ryQHQD/AQLRB/i0St7WYei14ARiC7jTbNtNJoDyzrQft1A9xlTpeh5K9BDyNqXrCBiTG0m1GOKD6A2O7cuUWCV+McqUqSRRhpppJFGGmmkkUYaaaSRRhpppP8ZPbW9aDStJzdVjabl5Fay0TSf3EA3kr420E1tGxxH39sGJzZLnqG/zoc2S05rEV3z/DnJsBbRT3spKaouasMQAAAAAElFTkSuQmCC" alt="facebook"></div>
@@ -31,6 +32,7 @@
                     
                 </div>
                  
+
                  
              </div>
     
@@ -63,6 +65,7 @@
                <div id="Already">
                  <div><p>New to CrystaLane?</p></div>
                  <div><a href="SignUp.html">Create Account</a></div>
+
                </div>
            </div>
         </div>
@@ -71,3 +74,27 @@
 </body>
 </html>
 <script src="./script/logIn.js"></script>
+<script>
+    var storedData=JSON.parse(localStorage.getItem("signUpData"));
+
+    document.querySelector("#submit").addEventListener("click",check);
+
+    function check(){
+        var enter=document.querySelector("#enter").value;
+        
+        let flag=false;
+
+        for(let i=0;i<storedData.length;i++){
+            if(storedData[i].email===enter || storedData[i].mobile===enter){
+                flag=true;
+            }
+        }
+        if(flag==true){
+            alert("Login Successful!!");
+            window.location.href="index.html";
+
+        }else{
+            alert("Login Failed!");
+        }
+    }
+</script>

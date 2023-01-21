@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Crystaline | Cart</title>
     <link rel="stylesheet" href="./style/checkout.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header id="navbar">
+        <div id="img-container">
+            <img src="/images/Crystaline (2).png" alt="#">
+        </div>
+        <div id="cart-icon"> <span id="cart-count"></span><ion-icon size="large" name="cart-outline"></ion-icon><h2>Shopping Cart</h2></div>
+    </header>
+    <h1>Your Cart</h1>
+    <div id="container">
+        <div id="cart-info">
+            <p id="amt-cont">Total (<span id="count"></span> items) <span id="amount"></span></p> 
+            <div id="cart-container"></div>
+        </div>
+        <div id="order-summary">
+            <table>
+                <tr>
+                  <td>SubTotal:  </td>
+                  <td id="sub"></td>
+                </tr>
+              </table> <br>
+              <button id="checkout-button">CHECKOUT</button>
+        </div>
+    </div>
 </body>
 <script src="./script/checkout.js"></script>
 </html>
