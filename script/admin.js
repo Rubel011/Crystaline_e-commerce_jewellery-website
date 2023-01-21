@@ -110,7 +110,15 @@ closeBtn.addEventListener("click", () => {
 let prod_container = document.getElementById("prod-container");
 let earring_container = document.getElementById("earring-container");
 let change_dash = document.getElementById("change_dash");
+let form = document.getElementById("form-id");
+let main_form = document.getElementById("main_form");
+let product_id = document.getElementById("product_id");
+let product_image = document.getElementById("product_image");
+let product_name = document.getElementById("product_name");
+let product_price = document.getElementById("product_price");
 
+
+form.style.display = "none"
 let data = JSON.parse(localStorage.getItem("favourites")) || [];
 
 products_btn.addEventListener("click", () => {
@@ -158,7 +166,17 @@ function displayproducts(data) {
     let del = document.createElement("button");
     del.innerText = "Delete";
     let edit = document.createElement("button");
-    edit.innerText = "Edit"
+    edit.innerText = "Edit";
+
+
+    edit.addEventListener('click', () => {
+      form.style.display = "block"
+      product_id.value = element.id
+      product_name.value = element.name
+      product_price.value = element.price
+      product_image.value = element.image
+
+    })
     del.addEventListener("click", function () {
       data.splice(index, 1);
       localStorage.setItem("favourites", JSON.stringify(data));
@@ -167,12 +185,24 @@ function displayproducts(data) {
 
 
 
-    cart.append(image, name, price, type, del,edit);
+    cart.append(image, name, price, type, del, edit);
     prod_container.append(cart);
 
   });
 
 }
+
+main_form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let obj = {
+    name: main_form.product_name.value,
+    image: main_form.product_image.value,
+    id: main_form.product_id.value,
+    price: main_form.product_price.value,
+  }
+  console.log(obj)
+})
+
 function displayEarrings(data) {
   earring_container.innerHTML = null;
   data.forEach((element, index) => {
@@ -190,6 +220,16 @@ function displayEarrings(data) {
     del.innerText = "Delete";
     let edit = document.createElement("button");
     edit.innerText = "Edit"
+
+    // edit.addEventListener(() => {
+    //   let formel = document.createElement("form");
+    //   let imgurl_input = document.createElement("input");
+    //   let price_input = document.createElement("input");
+    //   let id_input = document.createElement("input");
+
+    //   formel.append(imgurl_input,price_input,id_input)
+    //   form.append(formel);
+    // })
     del.addEventListener("click", function () {
       data.splice(index, 1);
       localStorage.setItem("favourites", JSON.stringify(data));
@@ -198,7 +238,7 @@ function displayEarrings(data) {
 
 
 
-    cart.append(image, name, price, type, del,edit);
+    cart.append(image, name, price, type, del, edit);
     earring_container.append(cart);
 
   });
