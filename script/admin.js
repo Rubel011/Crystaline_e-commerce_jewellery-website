@@ -1,28 +1,25 @@
-// Executes when document is loaded
 document.addEventListener("DOMContentLoaded", (ev) => {
-    // Recent Orders Data
-    document.getElementById("recent-orders--table").appendChild(buildTableBody());
-  
-    // Updates Data
-    document
-      .getElementsByClassName("recent-updates")
-      .item(0)
-      .appendChild(buildUpdatesList());
-  
-    // Sales Analytics
-    const salesAnalytics = document.getElementById("analytics");
-    buildSalesAnalytics(salesAnalytics);
-  });
-  
-  // Document Builder
-  const buildTableBody = () => {
-    const recentOrderData = RECENT_ORDER_DATA;
-  
-    const tbody = document.createElement("tbody");
-  
-    let bodyContent = "";
-    for (const row of recentOrderData) {
-      bodyContent += `
+  document.getElementById("recent-orders--table").appendChild(buildTableBody());
+
+  document
+    .getElementsByClassName("recent-updates")
+    .item(0)
+    .appendChild(buildUpdatesList());
+
+  // Sales Analytics
+  const salesAnalytics = document.getElementById("analytics");
+  buildSalesAnalytics(salesAnalytics);
+});
+
+// Document Builder
+const buildTableBody = () => {
+  const recentOrderData = RECENT_ORDER_DATA;
+
+  const tbody = document.createElement("tbody");
+
+  let bodyContent = "";
+  for (const row of recentOrderData) {
+    bodyContent += `
         <tr>
           <td>${row.productName}</td>
           <td>${row.productNumber}</td>
@@ -31,22 +28,22 @@ document.addEventListener("DOMContentLoaded", (ev) => {
           <td class="primary">Details</td>
         </tr>
       `;
-    }
-  
-    tbody.innerHTML = bodyContent;
-  
-    return tbody;
-  };
-  
-  const buildUpdatesList = () => {
-    const updateData = UPDATE_DATA;
-  
-    const div = document.createElement("div");
-    div.classList.add("updates");
-  
-    let updateContent = "";
-    for (const update of updateData) {
-      updateContent += `
+  }
+
+  tbody.innerHTML = bodyContent;
+
+  return tbody;
+};
+
+const buildUpdatesList = () => {
+  const updateData = UPDATE_DATA;
+
+  const div = document.createElement("div");
+  div.classList.add("updates");
+
+  let updateContent = "";
+  for (const update of updateData) {
+    updateContent += `
         <div class="update">
           <div class="profile-photo">
             <img src="${update.imgSrc}" />
@@ -57,22 +54,22 @@ document.addEventListener("DOMContentLoaded", (ev) => {
           </div>
         </div>
       `;
-    }
-  
-    div.innerHTML = updateContent;
-  
-    return div;
-  };
-  
-  const buildSalesAnalytics = (element) => {
-    const salesAnalyticsData = SALES_ANALYTICS_DATA;
-  
-    for (const analytic of salesAnalyticsData) {
-      const item = document.createElement("div");
-      item.classList.add("item");
-      item.classList.add(analytic.itemClass);
-  
-      const itemHtml = `
+  }
+
+  div.innerHTML = updateContent;
+
+  return div;
+};
+
+const buildSalesAnalytics = (element) => {
+  const salesAnalyticsData = SALES_ANALYTICS_DATA;
+
+  for (const analytic of salesAnalyticsData) {
+    const item = document.createElement("div");
+    item.classList.add("item");
+    item.classList.add(analytic.itemClass);
+
+    const itemHtml = `
         <div class="icon">
           <span class="material-icons-sharp"> ${analytic.icon} </span>
         </div>
@@ -85,33 +82,125 @@ document.addEventListener("DOMContentLoaded", (ev) => {
           <h3>${analytic.sales}</h3>
         </div>
       `;
-  
-      item.innerHTML = itemHtml;
-  
-      element.appendChild(item);
-    }
-  };
-  
-  // Document operation functions
-  const sideMenu = document.querySelector("aside");
-  const menuBtn = document.querySelector("#menu-btn");
-  const closeBtn = document.querySelector("#close-btn");
-  const themeToggler = document.querySelector(".theme-toggler");
-  
-  // Show Sidebar
-  menuBtn.addEventListener("click", () => {
-    sideMenu.style.display = "block";
+
+    item.innerHTML = itemHtml;
+
+    element.appendChild(item);
+  }
+};
+
+// Document operation functions
+const sideMenu = document.querySelector("aside");
+const menuBtn = document.querySelector("#menu-btn");
+const closeBtn = document.querySelector("#close-btn");
+
+const products_btn = document.querySelector("#products_btn")
+
+// Show Sidebar
+menuBtn.addEventListener("click", () => {
+  sideMenu.style.display = "block";
+});
+
+// Hide Sidebar
+closeBtn.addEventListener("click", () => {
+  sideMenu.style.display = "none";
+});
+
+//products
+let prod_container = document.getElementById("prod-container");
+let earring_container = document.getElementById("earring-container");
+let change_dash = document.getElementById("change_dash");
+
+let data = JSON.parse(localStorage.getItem("favourites")) || [];
+
+products_btn.addEventListener("click", () => {
+  change_dash.innerText = "Products"
+  fetch('https://63c6ab94d307b769673e3b21.mockapi.io/rings')
+    .then((res) => {
+      return res.json();
+    })
+    .then((data) => {
+      displayproducts(data);
+    })
+    .catch(function (error) {
+      console.log(error);
+    })
+  fetch('https://63c6ab94d307b769673e3b21.mockapi.io/Earrings')
+    .then((res) => {
+      return res.json();
+    })
+    .then((data) => {
+      displayEarrings(data);
+    })
+    .catch(function (error) {
+      console.log(error);
+    })
+
+
+
+
+
+
+})
+function displayproducts(data) {
+  prod_container.innerHTML = null;
+  data.forEach((element, index) => {
+
+    let cart = document.createElement("div");
+    let image = document.createElement("img");
+    image.src = element.image;
+    let name = document.createElement("h1");
+    name.innerText = element.name;
+    let price = document.createElement("h3");
+    price.innerText = element.price;
+    let type = document.createElement("p");
+    type.innerText = element.type;
+    let del = document.createElement("button");
+    del.innerText = "Delete";
+    let edit = document.createElement("button");
+    edit.innerText = "Edit"
+    del.addEventListener("click", function () {
+      data.splice(index, 1);
+      localStorage.setItem("favourites", JSON.stringify(data));
+      displayproducts(data);
+    })
+
+
+
+    cart.append(image, name, price, type, del,edit);
+    prod_container.append(cart);
+
   });
-  
-  // Hide Sidebar
-  closeBtn.addEventListener("click", () => {
-    sideMenu.style.display = "none";
+
+}
+function displayEarrings(data) {
+  earring_container.innerHTML = null;
+  data.forEach((element, index) => {
+
+    let cart = document.createElement("div");
+    let image = document.createElement("img");
+    image.src = element.image;
+    let name = document.createElement("h1");
+    name.innerText = element.name;
+    let price = document.createElement("h3");
+    price.innerText = element.price;
+    let type = document.createElement("p");
+    type.innerText = element.type;
+    let del = document.createElement("button");
+    del.innerText = "Delete";
+    let edit = document.createElement("button");
+    edit.innerText = "Edit"
+    del.addEventListener("click", function () {
+      data.splice(index, 1);
+      localStorage.setItem("favourites", JSON.stringify(data));
+      displayEarrings(data);
+    })
+
+
+
+    cart.append(image, name, price, type, del,edit);
+    earring_container.append(cart);
+
   });
-  
-  // Change Theme
-  themeToggler.addEventListener("click", () => {
-    document.body.classList.toggle("dark-theme-variables");
-  
-    themeToggler.querySelector("span:nth-child(1)").classList.toggle("active");
-    themeToggler.querySelector("span:nth-child(2)").classList.toggle("active");
-  });
+
+}
