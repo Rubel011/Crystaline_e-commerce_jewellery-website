@@ -1,4 +1,4 @@
-
+let count=0;
 let bag = []
 fetch('https://63c6ab94d307b769673e3b21.mockapi.io/Earrings')
     .then((fromResolve) => {
@@ -34,6 +34,9 @@ function displayCard(data) {
         button.textContent = "Add To Cart"
         button.addEventListener("click", () => {
             // preventDefault()
+            count++
+            // document.querySelector('#cart-count').textContent = count
+            localStorage.setItem('cart-count',count)
             let cartData = JSON.parse(localStorage.getItem("cart-products")) || []
             isAlreadyInCart = false;
             for (let i = 0; i < cartData.length; i++) {
@@ -139,13 +142,13 @@ function b15_25() {
 }
 
 //pagination
-let totalPages = Math.ceil(35/12)
-let pagination = document/querySelector("#pagination")
-for(let i=1; i<=totalPages; i++){
-    let pageButton = document.createElement('button')
-    pageButton.textContent = i;
-    pageButton.addEventListener('click',() => {
-        console.log("working");
-    })
-    pagination.append(pageButton)
-}
+// let totalPages = Math.ceil(35/12)
+// let pagination = document/querySelector("#pagination")
+// for(let i=1; i<=totalPages; i++){
+//     let pageButton = document.createElement('button')
+//     pageButton.textContent = i;
+//     pageButton.addEventListener('click',() => {
+//         console.log("working");
+//     })
+//     pagination.append(pageButton)
+// }
