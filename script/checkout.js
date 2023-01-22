@@ -80,3 +80,6 @@ function displayCard(data) {
     })
 }
 displayCard(getCartdata)
+document.querySelector("#checkout-button").addEventListener("click",() => {
+    window.location.href = "payment.html"
+})

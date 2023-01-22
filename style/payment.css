@@ -1,0 +1,72 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+#nav {
+    background-color:#f5f7f8;
+}
+
+#rbname {
+    text-decoration: none;
+    font-size: xx-large
+}
+
+#logo-name {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    margin-left: 150px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+#logo {
+    width: 30%;
+    height: 10%;
+}
+
+.checkout-cont {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 15rem;
+}
+
+.input-control>input {
+    width: 90%;
+    height: 30px;
+}
+
+#address,
+#payment{
+    background-color: white;
+    padding: 5px 20px 40px 60px;
+    margin-top: 30px;
+    width: 135%;
+}
+#summary{
+    background-color: white;
+    padding: 5px 20px 40px 60px;
+    margin-top: 30px;
+    width: 30%;
+}
+img{
+    width: 10%;
+}
+#payment>button{
+    color: white;
+    background-color: black;
+    width: auto;
+    height: 35px;
+}
+#item-cont+p>span{
+    font-weight: 700;
+}
