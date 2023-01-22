@@ -224,11 +224,12 @@ main_form.addEventListener("submit", (e) => {
     updateProduct(obj)
   }
   // console.log(obj)
+  form.style.display = "none"
 })
 
 
 function addProduct(obj) {
-  console.log( JSON.stringify(obj))
+  // console.log( JSON.stringify(obj))
   fetch(`https://63c6ab94d307b769673e3b21.mockapi.io/${obj.type}`,
     {
       method: 'POST',
@@ -253,7 +254,7 @@ function updateProduct(obj) {
   // console.log('update')
   fetch(`https://63c6ab94d307b769673e3b21.mockapi.io/${obj.type}/${obj.id}`,
     {
-      method: 'PATCH',
+      method: 'PUT',
       headers: {
         'Content-type': 'application/json'
       },

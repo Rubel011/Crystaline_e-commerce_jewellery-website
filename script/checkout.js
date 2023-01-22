@@ -9,7 +9,6 @@ let cartCount = document.querySelector('#cart-count')
 
 function displayCard(data) {
     container.innerHTML = null
-    cartCount.innerHTML = null
     data.forEach((e, index) => {
         total = total + (quantity * (e.price*71))
         rightSubTotal.textContent = total
@@ -81,4 +80,3 @@ function displayCard(data) {
     })
 }
 displayCard(getCartdata)
-cartCount.textContent = getCartCount
