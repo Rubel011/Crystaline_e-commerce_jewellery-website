@@ -249,13 +249,13 @@
 #footer_contact {
   background-color: #f6f4ff;
   width: 100%;
-  height: 500px;
+  height: 400px;
 }
 #footer_inside {
   width: 90vw;
   margin: auto;
   /* background-color: #2696e9; */
-  height: 500px;
+  height: 400px;
   padding: 4vw;
 }
 #first{
@@ -281,10 +281,37 @@
   border-radius: 10px;
   font-size: x-small;
   border: 1px solid #2696e9;
+  margin-bottom: 10px;
 }
 #btn:hover{
   background: linear-gradient(to right, rgb(222, 87, 229), rgb(136, 99, 251));
   color: white;
+}
+
+#second{
+display: flex;
+justify-content: space-between;
+}
+
+#second_payment{
+  width: 100px;
+  height: 100px;
+  /* background-color: red; */
+
+}
+#second_icon_small{
+display: flex;
+}
+#second_icon_small>i{
+  color: rgb(222, 87, 229);
+ margin: 10px;
+ font-size: 20px;
+ padding: 5px;
+ border-radius: 4px;
+ border:1px solid #2696e9;
+}
+.facebook{
+font-size: 30px; 
 }
 /* media query--------------------- */
 @media all and (min-width: 600px) and (max-width: 900px) {
@@ -345,5 +372,9 @@
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(1, 1fr);
+  }
+  #footer_inside {
+    width: 100vw;
+    padding: 3vw;
   }
 }
