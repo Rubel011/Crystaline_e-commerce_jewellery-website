@@ -163,9 +163,9 @@ function displayproducts(data) {
     let cart = document.createElement("div");
     let image = document.createElement("img");
     image.src = element.image;
-    let name = document.createElement("h1");
+    let name = document.createElement("h3");
     name.innerText = element.name;
-    let price = document.createElement("h3");
+    let price = document.createElement("h4");
     price.innerText = element.price;
     let type = document.createElement("p");
     type.innerText = element.type;
@@ -299,9 +299,9 @@ function displayEarrings(data) {
     let cart = document.createElement("div");
     let image = document.createElement("img");
     image.src = element.image;
-    let name = document.createElement("h1");
+    let name = document.createElement("h3");
     name.innerText = element.name;
-    let price = document.createElement("h3");
+    let price = document.createElement("h4");
     price.innerText = element.price;
     let type = document.createElement("p");
     type.innerText = element.type;
