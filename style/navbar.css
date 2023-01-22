@@ -254,7 +254,7 @@ nav ul li:hover .subMenu {
   border-radius: 5px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   width: 230px;
-  height: 200px;
+  height: 300px;
   margin-left: -6rem;
   top: 33px;
   z-index: 2;
@@ -284,6 +284,13 @@ nav ul li:hover .subMenu {
 hr {
   width: 90%;
   margin-top: 15px;
+}
+#sign_up{
+  margin-top: 10px;
+}
+#admin{
+  margin-top: 15px;
+  width: 78%;
 }
 .dropdown-options button {
   border: none;

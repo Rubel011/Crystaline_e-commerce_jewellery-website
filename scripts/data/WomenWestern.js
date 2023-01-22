@@ -1,20 +1,16 @@
 const WomenWestern = [
     {
-        heading : "Topwear",
-        data : ["Tops","Dresses","Sweaters","Jumpsuits"]
+        heading : "SHOP BY STYLE",
+        data : ["ENGAGEMENT","FASHION","CASUAL","ADJUSTABLE RINGS","SILVER RINGS","PLATINUM RINGS","COCKTAIL","BANDS","MEN'S RINGS","SILVER STATEMENT RINGS"]
     },
     {
-        heading : "Bottomwear",
-        data : ["Jeans","Jeggings","Palazzos","Shorts","Skirts"]
+        heading : "SHOP BY METAL & STONE",
+        data : ["GEMSTONE","SOLITAIRE","DIAMOND","GOLD","YELLOW GOLD","WHITE GOLD","ROSE GOLD","SILVER GOLD","SILVER BY SHAYA"]
     },
     {
-        heading : "Innerwear",
-        data : ["Bra","Briefs"]
-    },
-    {
-        heading : "Sleepwear",
-        data : ["Nightsuits","Babydolls"]
-    },
+        heading : "SHOP BY",
+        data : ["FOR MEN","UNDER ₹ 10K","₹ 10K TO ₹ 20K","₹ 20K TO ₹ 30K","ABOVE ₹ 20K","FOR WOMEN"]
+    }
 ]
 
 

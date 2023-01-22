@@ -1,38 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+=======
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+>>>>>>> cedce53441aea082fb3d559412d05be07a031073
     <title>Crystaline | Cart</title>
-    <link rel="stylesheet" href="./style/checkout.css">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header id="navbar">
-        <div id="img-container">
-            <img src="/images/Crystaline (2).png" alt="#">
+    <title>Crystaline</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.2.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style/navbar.css" />
+    <link rel="stylesheet" href="./style/checkout.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <section class="header">
+        <div class="headerLeft">
+          <div class="logoContainer">
+            <a href="index.html"
+              ><img src="./images/WhatsApp Image 2023-01-17 at 9.29.36 PM.jpeg"
+            /></a>
+          </div>
+
+          <!--Search Box-->
+          <div class="searchInputContainer">
+            <div class="searchIcon">
+              <img src="./images/search.png" />
+            </div>
+            <form action="" id="inputForm">
+              <input
+                type="text"
+                placeholder="Search by Product Code"
+                class="inputSearch"
+              />
+            </form>
+            <div class="inputCloseSearch">
+              <i class="fa-solid fa-xmark" id="closeSearch"></i>
+            </div>
+
+            <div class="searchRecentProduct">
+              <h3>Recent Searches</h3>
+              <div class="listofRecent"></div>
+            </div>
+          </div>
         </div>
-        <div id="cart-icon"> <span id="cart-count"></span><ion-icon size="large" name="cart-outline"></ion-icon><h2>Shopping Cart</h2></div>
+
+        <div class="headerRight">
+          <div class="downloadContainer">
+            <div class="mobileIcon">
+              <img src="./images/mobile.png" />
+            </div>
+            <p>Download App</p>
+
+            <div class="downloadHoverBtnContainer">
+              <h3>Download From</h3>
+
+              <a href="" class="downloadBtn">
+                <img
+                  src="https://images.meesho.com/images/pow/playstore-icon-big.webp"
+                />
+              </a>
+              <a href="" class="downloadBtn">
+                <img
+                  src="https://images.meesho.com/images/pow/appstore-icon-big.webp"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- <div class="becomeSupplierContainer">
+              <p>Become a Supplier</p>
+            </div> -->
+
+          <div class="profileAndCart">
+            <div class="profileContainer">
+              <div class="profileIcon">
+                <img src="./images/profile.png" />
+              </div>
+
+              <!-- Drop Down Sigin/SignUp -->
+
+              <div class="dropdown">
+                <p id="icon-style">Profile</p>
+                <div class="dropdown-options">
+                  <h4>Hello User</h4>
+                  <p>To access your Crystaline account</p>
+                  <button class="sign-up" id="sign_up">Sign Up</button>
+                  <button class="sign-up" id="admin">Admin</button>
+                  <hr />
+                  <div class="orderIcon">
+                    <img src="./images/orders.png" />
+                    <a href="#">My Orders</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="CartContainer" id="cartIcon">
+              <div class="CartIcon">
+                <img src="./images/cart.png" />
+              </div>
+              <p id="icon-style">Cart</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Drop-Down Menu-->
+      <nav>
+        <ul>
+          <li>
+            NEW ARRIVALS
+            <div class="subMenu">
+              <div id="womenEthic" class="submenuList"></div>
+            </div>
+          </li>
+          <li id="rings">
+            RINGS
+            <div class="subMenu">
+              <div id="womenWestern" class="submenuList"></div>
+            </div>
+          </li>
+          <li id="earrings">
+            EARRINGS
+            <div class="subMenu">
+              <div id="men" class="submenuList"></div>
+            </div>
+          </li>
+          <li>
+            BRACELETES & BANGLES
+            <div class="subMenu">
+              <div id="kids" class="submenuList"></div>
+            </div>
+          </li>
+          <li>
+            SOLITAIRES
+            <div class="subMenu">
+              <div id="HomeAndKitchen" class="submenuList"></div>
+            </div>
+          </li>
+          <li>
+            MANGALSUTRA
+            <div class="subMenu">
+              <div id="beautyAndHealth" class="submenuList"></div>
+            </div>
+          </li>
+          <li>
+            READY TO SHIP
+            <div class="subMenu">
+              <div id="JewelleryAndAccessories" class="submenuList"></div>
+            </div>
+          </li>
+          <li>
+            KIDS
+            <div class="subMenu">
+              <div id="BagsFootWarId" class="submenuList"></div>
+            </div>
+          </li>
+          <li>
+            OTHER JEWELLERY
+            <div class="subMenu">
+              <div id="ElectronicsId" class="submenuList"></div>
+            </div>
+          </li>
+        </ul>
+      </nav>
     </header>
     <h1>Your Cart</h1>
     <div id="container">
-        <div id="cart-info">
-            <p id="amt-cont">Total (<span id="count"></span> items) <span id="amount"></span></p> 
-            <div id="cart-container"></div>
-        </div>
-        <div id="order-summary">
-            <table>
-                <tr>
-                  <td>SubTotal:  </td>
-                  <td id="sub"></td>
-                </tr>
-              </table> <br>
-              <button id="checkout-button">CHECKOUT</button>
-        </div>
+      <div id="cart-info">
+        <p id="amt-cont">
+          Total (<span id="count"></span> items) <span id="amount"></span>
+        </p>
+        <div id="cart-container"></div>
+      </div>
+      <div id="order-summary">
+        <table>
+          <tr>
+            <td>SubTotal:</td>
+            <td id="sub"></td>
+          </tr>
+        </table>
+        <br />
+        <button id="checkout-button">CHECKOUT</button>
+      </div>
     </div>
-</body>
-<script src="./script/checkout.js"></script>
+  </body>
+  <script src="./script/checkout.js"></script>
+  <script src="./scripts/nav.js" type="module"></script>
 </html>

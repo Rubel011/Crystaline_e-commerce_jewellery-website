@@ -21,6 +21,28 @@ document.getElementById("closeSearch").addEventListener("click", () => {
     inputSearchEl.value = "";
     document.getElementById("closeSearch").style.display = "none";
 });
+let rings = document.getElementById("rings")
+let earrings = document.getElementById("earrings")
+let cartIcon = document.getElementById("cartIcon")
+earrings.addEventListener('click', () => {
+    window.location.href = "earrings.html"
+})
+rings.addEventListener('click', () => {
+    window.location.href = "ring.html"
+})
+cartIcon.addEventListener('click', () => {
+    window.location.href = "checkout.html"
+})
+
+let adminbtn = document.getElementById("admin")
+let sign_up_btn = document.getElementById("sign_up")
+
+adminbtn.addEventListener("click", () => {
+    window.location.href = "admin.html"
+})
+sign_up_btn.addEventListener("click", () => {
+    window.location.href = "signup.html"
+})
 
 
 inputSearchEl.addEventListener("keydown", () => {
@@ -80,7 +102,7 @@ function renderSubMenu(id, data) {
 
 
 /****womenEthic */
-renderSubMenu("womenEthic", WomenEthnic)
+// renderSubMenu("womenEthic", WomenEthnic)
 
 /****WomenWestern */
 renderSubMenu("womenWestern", WomenWestern)
@@ -98,13 +120,13 @@ renderSubMenu("HomeAndKitchen", HomeAndKitchen)
 renderSubMenu("beautyAndHealth", BeautyHealth)
 
 // Jewellery & Accessories
-renderSubMenu("JewelleryAndAccessories", JewelleryAccessories)
+// renderSubMenu("JewelleryAndAccessories", JewelleryAccessories)
 
-// Bags & Footwear
-renderSubMenu("BagsFootWarId", BagsFootwear)
+// // Bags & Footwear
+// renderSubMenu("BagsFootWarId", BagsFootwear)
 
-// Electronics
-renderSubMenu("ElectronicsId", Electronics)
+// // Electronics
+// renderSubMenu("ElectronicsId", Electronics)
 
 
 

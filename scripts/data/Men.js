@@ -1,28 +1,16 @@
 const Men = [
     {
-        heading : "Top Wear",
-        data : ["All Top Wear","Tshirts","Shirts"]
+        heading : "SHOP BY STYLE",
+        data : ["STUDS","JHUMKAS","EARCUFTS","PEARL EARRINGS","DROPS","HOOPS AND HUGGLES","SUIDHAGA","GOLD EARRINGS","SILVER EARRINGS"]
     },
     {
-        heading : "Bottom Wear",
-        data : ["Track Pants","Jeans","Trousers"]
+        heading : "SHOP BY METAL & STONE",
+        data : ["GEMSTONE","SOLITAIRE","DIAMOND","GOLD","YELLOW GOLD","WHITE GOLD","ROSE GOLD","SILVER GOLD","SILVER BY SHAYA"]
     },
     {
-        heading : "Men Accessories",
-        data : ["All Men Accessories","Watches","Belts","Wallets","Jewellery","Sunglasses","Bags"]
-    },
-    {
-        heading : "Men Footwear",
-        data : ["Casual Shoes","Sports Shoes","Sandals","Formal Shoes"]
-    },
-    {
-        heading : "Ethnic Wear",
-        data : ["Men Kurtas","Ethnic Jackets"]
-    },
-    {
-        heading : "Inner & Sleep Wear",
-        data : ["All Inner & Sleep Wear","Vests"]
-    },
+        heading : "SHOP BY",
+        data : ["FOR MEN","UNDER ₹ 10K","₹ 10K TO ₹ 20K","₹ 20K TO ₹ 30K","ABOVE ₹ 20K","FOR WOMEN"]
+    }
 ]
 
 
