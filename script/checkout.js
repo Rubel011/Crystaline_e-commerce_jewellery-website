@@ -82,3 +82,7 @@ function displayCard(data) {
 }
 displayCard(getCartdata)
 cartCount.textContent = getCartCount
+
+document.querySelector("#checkout-button").addEventListener("click",() => {
+    window.location.href = "payment.html"
+})
