@@ -80,7 +80,7 @@ function renderSubMenu(id, data) {
 
 
 /****womenEthic */
-renderSubMenu("womenEthic", WomenEthnic)
+// renderSubMenu("womenEthic", WomenEthnic)
 
 /****WomenWestern */
 renderSubMenu("womenWestern", WomenWestern)
