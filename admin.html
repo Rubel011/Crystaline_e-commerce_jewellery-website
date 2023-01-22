@@ -73,7 +73,7 @@
             <button id="products_btn">Products</button>
           </a>
           
-          <a href="#">
+          <a href="#" id="add_product">
             <span class="material-icons-sharp"> add </span>
             <button>Add Product</button>
           </a>
@@ -131,7 +131,16 @@
         <label for="product_price">Product Price</label>
         <input type="number" id="product_price" placeholder="Enter Product price">
         <br>
-        <input type="submit" placeholder="Submit" id="submit_id">
+        <label for="product_type" id="product_type_label">Product Type</label>
+        <input type="text" id="product_type" placeholder="Enter Product type">
+        <br>
+        <label for="priority" id="">Change</label>
+        <select id="priority">
+          <option>--Select One--</option>
+          <option value="update">Edit Product</option>
+          <option value="add">Add Product</option>
+        </select>
+        <input type="submit" placeholder="Submit"  name="submit_name" id="submit_id">
        </form>
         </div>
 
