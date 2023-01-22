@@ -21,7 +21,9 @@ img {
     align-items: center;
     gap: 1rem;
 }
-
+body{
+    margin-top: 10%;
+}
 h1 {
     margin-left: 6%;
 }
