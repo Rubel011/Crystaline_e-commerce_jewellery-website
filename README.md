@@ -27,27 +27,17 @@
 <img width="944" alt="earringsPage" src="https://user-images.githubusercontent.com/115461556/214024327-17c86fba-0e9e-4123-b75b-4df8a9893f5b.png">
 <br>
 
-<!-- cart2 -->
-<h1 align="center">CART IS EMPTY</h1>
-
-<img src="https://user-images.githubusercontent.com/115465871/214015278-09b1b39f-bd54-4075-949d-f0ca758b9896.jpeg" width="100%"><br>
-
-
-
 <!-- cart page -->
 <h1 align="center" > CART PAGE </h1>
 
-<img src="https://user-images.githubusercontent.com/115465871/213983050-aa3a6f27-8474-43f7-9c2f-a0610941b0f0.jpeg" width="100%" ><br>
+<img src="https://user-images.githubusercontent.com/115461556/214037335-6f1051ab-4d93-473f-bd2b-555d91ff3199.jpg" width="944" >
+<br>
 
 <!-- check out -->
 <h1 align="center">CHECKOUT PAGE</h1>
 
-<img src="https://user-images.githubusercontent.com/115465871/214016260-498c2f10-4ad9-4ded-a3f1-31e665f863f5.jpeg" width="100%"><br>
-
-<!-- payment -->
-<h1 align="center">PAYMENT PAGE</h1>
-
-<img src="https://user-images.githubusercontent.com/115465871/214016749-5aecc73c-309f-48da-97d0-025ac7825c58.jpeg" width="100%"><br>
+<img src="https://user-images.githubusercontent.com/115461556/214037572-75f70b6d-f0fa-46e3-83af-206a4c431a46.jpg" width="944"><br>
+<br>
 
 <!-- admin page -->
 <h1 align="center">ADMIN PAGE</h1>
@@ -58,7 +48,8 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://linkedin.com/in/priti tiwari" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="priti tiwari" height="30" width="40" /></a>
+   
+<a href="https://www.linkedin.com/in/rubel-foridi-62319a231/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Rubel Foridi" height="30" width="40" /></a>
 </p>
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=prititi" alt="prititi" /></a> </p>
 
@@ -66,4 +57,4 @@
 <h4 align="left">HTML, CSS, JavaScript, Bootstrap</h4>
 
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=prititi&" alt="prititi" /></p>
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=Rubel011&" alt="Rubel011" /></p>
