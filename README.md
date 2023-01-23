@@ -9,23 +9,22 @@
 
 <h1 align="center" >TEAM DESCRIPTION</h1>
 <ul>
-   <li> <h4 >Rubel Foridi - [ Landing page,Admin page JavaScript ]</h4></li>
-    <li> <h4 >Dhanush - [ Login/Registration, Man page ,Women page ]</h4></li>
-    <li> <h4 >Deepak - [ Product page ,Cart page ]</h4></li>
-     <li> <h4 >Shivbhushan - [ Cart is empty page ]</h4></li>
-      <li> <h4 >Ashish - [ Admin page ]</h4></li>
+   <li> <h4 > Rubel Foridi - [ Landing page, Admin page ]</h4></li>
+    <li> <h4 > Kancharla Venkata Anil Kumar Reddy - [  Rings page , Earrings page ]</h4></li>
+     <li> <h4 > Madhura Vinod Tatte - [ Login page , Signin page ]</h4></li>
+      <li> <h4 > Divi Anand Sagar - [ Admin page ]</h4></li>
       <li><h4 align="left" > https://majestic-belekoy-b3219c.netlify.app </h4></li>
      
 </ul>
-<!-- men page -->
-<h1 align="center">MEN PAGE</h1>
+<!-- rings page -->
+<h1 align="center"> RINGS PAGE </h1>
 <img width="944" alt="ringPage" src="https://user-images.githubusercontent.com/115461556/214023439-a3171217-f3c7-4799-b699-c9fe040c565c.png">
 <br>
 
-<!-- womon page -->
-<h1 align="center">WOMEN PAGE</h1>
+<!-- earrings page -->
+<h1 align="center"> EARRINGS PAGE </h1>
 
-<img width="943" alt="earringsPage" src="https://user-images.githubusercontent.com/115461556/214024327-17c86fba-0e9e-4123-b75b-4df8a9893f5b.png">
+<img width="944" alt="earringsPage" src="https://user-images.githubusercontent.com/115461556/214024327-17c86fba-0e9e-4123-b75b-4df8a9893f5b.png">
 <br>
 
 <!-- cart2 -->
@@ -53,7 +52,7 @@
 <!-- admin page -->
 <h1 align="center">ADMIN PAGE</h1>
 
-<img src="https://user-images.githubusercontent.com/115465871/213983223-b26bdf4d-ac11-4921-bd20-043166b12bb5.jpeg" width="100%"><br>
+<img width="944" alt="AdminPage" src="https://user-images.githubusercontent.com/115461556/214032368-e254366c-7fd5-416f-93f9-7a0ced915251.png"><br>
 
 
 
