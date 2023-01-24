@@ -51,7 +51,7 @@
    
 <a href="https://www.linkedin.com/in/rubel-foridi-62319a231/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Rubel Foridi" height="30" width="40" /></a>
 </p>
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=prititi" alt="prititi" /></a> </p>
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=Rubel011" alt="Rubel011" /></a> </p>
 
 <h1 align="left">Languages and Tools:</h1>
 <h4 align="left">HTML, CSS, JavaScript, Bootstrap</h4>
