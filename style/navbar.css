@@ -13,6 +13,13 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--textColor);
 }
+#logo{
+  width: 90%;
+  margin-top: 10%;
+}
+.inputSearch{
+  background-color: transparent;
+}
 #banner{
   margin-top: 130px;
 }
