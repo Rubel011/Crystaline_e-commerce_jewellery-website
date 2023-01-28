@@ -111,3 +111,38 @@ hr {
     width: 15px;
     border-radius: 50%;
 }
+@media (min-width: 600px) and (max-width: 1000px){
+    #navbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    body{
+        margin-top: 20%;
+    }
+    #cart-prod-cont{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media (min-width: 200px) and (max-width: 599px){
+    #navbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    body{
+        margin-top: 35%;
+    }
+    #cart-prod-cont{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
