@@ -152,3 +152,15 @@ function b15_25() {
 //     })
 //     pagination.append(pageButton)
 // }
+
+// search function
+function search() {
+    //sortbyname()
+    event.preventDefault()
+    let a = document.querySelector('.inputSearch').value
+    // console.log(a)
+    let searchData = bag.filter(function (e) {
+        return e.name.toLowerCase().includes(a.toLowerCase())
+    })
+    displayCard(searchData)
+}

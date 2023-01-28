@@ -11,7 +11,7 @@ function displayCard(data) {
     container.innerHTML = null
     data.forEach((e, index) => {
         total = total + (quantity * (e.price*71))
-        rightSubTotal.textContent = total
+        rightSubTotal.textContent = '₹' + total
         //rightDisc.textContent = e.discount_percent*71
 
         let divs = document.createElement('div')

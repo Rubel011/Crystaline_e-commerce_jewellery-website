@@ -48,17 +48,20 @@ section {
   display: flex;
   align-items: center;
 }
+.headerRight{
+  justify-content: center;
+  margin-right: 5%;
+}
 .logoContainer {
   width: 155px;
   height: 125px;
 }
-
 .searchInputContainer {
   width: 400px;
   height: 45px;
   outline: 1px solid rgb(126, 126, 126);
   display: flex;
-  margin-left: 25px;
+  margin-left: 155px;
   border-radius: 3px;
   align-items: center;
   padding: 10px;
