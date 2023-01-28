@@ -26,7 +26,7 @@ function register(e){
        document.querySelector("#verifyPass").value="";
        return;
    }else{
-       alert("Welcome to CrystaLane!!");
+       alert("Welcome to CrystaLine!!");
        window.location.href="login.html";
        
    }
