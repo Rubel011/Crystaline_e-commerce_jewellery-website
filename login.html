@@ -55,6 +55,11 @@
                  <div><h4 class="input-heading">Enter Mobile Number or Email</h4></div>
                  <input class="input" type="text" id="enter">
               </div>
+
+              <div id="email-box">
+                <div><h4 class="input-heading">Password</h4></div>
+                <input class="input" type="password" id="password">
+             </div>
     
            <div id="register">
                
@@ -77,27 +82,3 @@
 </body>
 </html>
 <script src="./script/logIn.js"></script>
-<script>
-    var storedData=JSON.parse(localStorage.getItem("signUpData"));
-
-    document.querySelector("#submit").addEventListener("click",check);
-
-    function check(){
-        var enter=document.querySelector("#enter").value;
-        
-        let flag=false;
-
-        for(let i=0;i<storedData.length;i++){
-            if(storedData[i].email===enter || storedData[i].mobile===enter){
-                flag=true;
-            }
-        }
-        if(flag==true){
-            alert("Login Successful!!");
-            window.location.href="index.html";
-
-        }else{
-            alert("Login Failed!");
-        }
-    }
-</script>
