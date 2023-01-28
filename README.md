@@ -13,7 +13,7 @@
     <li> <h4 > Kancharla Venkata Anil Kumar Reddy - [  Rings page , Earrings page ]</h4></li>
      <li> <h4 > Madhura Vinod Tatte - [ Login page , Signin page ]</h4></li>
       <li> <h4 > Divi Anand Sagar - [ Admin page ]</h4></li>
-      <li><h4 align="left" >https://illustrious-cupcake-f30364.netlify.app </h4></li>
+      <li><h4 align="left" >https://celebrated-marshmallow-ec6aa6.netlify.app</h4></li>
      
 </ul>
 <!-- rings page -->
