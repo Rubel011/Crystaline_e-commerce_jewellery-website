@@ -1,6 +1,7 @@
 *{
     margin:0px;
     padding:0px;
+    font-family: 'Lato', sans-serif;
 }
 #main{
     width:100%;
@@ -29,7 +30,7 @@
     
 }
 #heading>h3{
-    font-family: "latobold";
+    /* font-family: "latobold"; */
     font-weight: normal;
     text-align: center;
 }
@@ -78,7 +79,7 @@
 }
 .box>div:nth-child(2)>a>h4{
     text-align: center;
-    font-family:InterSemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font-family:InterSemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; */
     color:#BDBDBD;
     margin-top:2px;
 }
@@ -108,7 +109,7 @@
     margin-left:25px;
 }
 #or>div:nth-child(2)>h4{
-    font-family:InterSemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font-family:InterSemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; */
     color:#9E9E9E;
     font-weight: 300;
 }
@@ -134,7 +135,7 @@
 }
 .input-heading{
     line-height: 18px;
-    font-family:InterSemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font-family:InterSemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; */
     color:#6A1B9A;
     font-size: large;
     font-weight:normal;
@@ -244,7 +245,7 @@
     margin-left:10px;
 }
 #register h3{
-    font-family:InterSemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; ;
+    /* font-family:InterSemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; ; */
     color:#6A1B9A;
     font-size: large;
 }
@@ -254,7 +255,7 @@
     margin-top:8px;
 }
 #register>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>p{
-    font-family:InterSemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font-family:InterSemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; */
     font-size:small ;
 }
 #submit{
@@ -275,7 +276,7 @@
     
     justify-content: center;
     margin-top: 20px;
-    font-family:InterSemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font-family:InterSemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; */
     font-size: small ;
 }
 #Already>div:nth-child(2){

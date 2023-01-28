@@ -3,7 +3,9 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: 'Lato', sans-serif;
 }
+
 
 /* banner styling------------------ */
 #banner > img {
@@ -14,7 +16,13 @@
   width: 100%;
   height: 450px;
 }
-
+#logo{
+  width: 90%;
+  margin-top: 10%;
+}
+.inputSearch{
+  background-color: transparent;
+}
 .img-slider .slide {
   z-index: 1;
   position: absolute;
