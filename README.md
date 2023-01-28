@@ -5,7 +5,7 @@
 
 <img align="right" alt="coding" width="400" src="https://thumbs.gfycat.com/ContentHeftyGuillemot-size_restricted.gif"> <br>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=prititi&label=Profile%20views&color=0e75b6&style=flat" alt="prititi" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=Rubel011&label=Profile%20views&color=0e75b6&style=flat" alt="Rubel011" /> </p>
 
 <h1 align="center" >TEAM DESCRIPTION</h1>
 <ul>
