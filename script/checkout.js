@@ -64,7 +64,7 @@ function displayCard(data) {
         removeBtn.addEventListener('click', () => {
             getCartCount--;
             localStorage.setItem("cart-count",getCartCount)
-            cartCount.textContent = getCartCount
+            // cartCount.textContent = getCartCount
             getCartdata.splice(index, 1)
             localStorage.setItem('cart-products', JSON.stringify(getCartdata))
             displayCard(getCartdata)
